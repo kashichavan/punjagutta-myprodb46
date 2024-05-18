@@ -1,0 +1,29 @@
+inserting record by creating direct object:
+--------------------------------------------
+
+     Syntax :
+
+        rv=ModelName(colName1=val1,colName2=val2,.....,colNamen=valn)
+        rv.save()
+
+
+>>> s1=Student("jones",21,"Hyderbad")
+>>> s1.save()
+
+
+ValueError: invalid literal for int() with base 10: 'jones'
+ValueError: Field 'id' expected a number but got 'jones'.
+
+
+
+
+ex:
+
+
+>>> s1=Student(name='jones',age=22,address='Hyderabad')
+>>> s1.save()
+>>> s2=Student(name='Smith',age=25,address='Mangaluru')
+>>> s2.save()
+>>> s3=Student(name='Harry',age=29,address='Kukatpally')
+>>> s3.save()
+
